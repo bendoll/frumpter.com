@@ -1,0 +1,127 @@
+:root {
+    --frumpink: rgb(204, 43, 94);
+    --frumpurple: rgb(117, 58, 136);
+    --frumpindigo: rgb(64, 49, 129);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: black;
+        --text: white;
+        --link-visited: rgb(255, 222, 222);
+        --link: rgb(255, 255, 255);
+        --link-hover: rgb(235, 174, 255);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+
+    :root {
+        --bg: white;
+        --text: var(--frumpurple);
+        --link-visited: var(--frumpink);
+        --link-hover: var(--frumpurple);
+        --link: var(--frumpindigo);
+    }
+}
+
+a {
+    color: var(--link)
+}
+
+a:visited {
+    color: var(--link-visited)
+}
+
+a:hover {
+    color: var(--link-hover)
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text);
+    background-color: var(--bg);
+}
+
+hr {
+    color: var(--text);
+    width: 100%;
+}
+
+p {
+    font-size: 12px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.header {
+    margin: 8px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+
+    & span {
+        font-size: 32px;
+    }
+}
+
+.inc {
+    font-size: 12px !important;
+}
+
+.address {
+    font-size: 12px;
+}
+
+.list-container {
+    margin: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+.list {
+    display: flex;
+    flex-flow: column;
+    margin: 0;
+}
+
+.list-item {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 16px;
+    max-width: 360px;
+}
+
+.list-item sub {
+    /* margin: 5px; */
+    font-size: 10px;
+}
+
+.bottom-li {
+    /* margin-bottom: 0px !important; */
+}
+
+.ad {
+    text-align: center;
+    font-size: 12px;
+}
+
+.footer {
+    font-size: 12px;
+    width: 100%;
+}
