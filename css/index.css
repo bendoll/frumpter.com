@@ -52,7 +52,7 @@ hr {
 }
 
 p {
-    font-size: 12px;
+    font-size: 16px
 }
 
 .container {
@@ -110,12 +110,7 @@ p {
 }
 
 .list-item sub {
-    /* margin: 5px; */
     font-size: 10px;
-}
-
-.bottom-li {
-    /* margin-bottom: 0px !important; */
 }
 
 .ad {
@@ -126,4 +121,10 @@ p {
 .footer {
     font-size: 12px;
     width: 100%;
+}
+
+.comments {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 12px;
 }
