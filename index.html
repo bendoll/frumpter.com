@@ -4,30 +4,31 @@
 <html lang="en">
 
 <head>
+    <title>THE FRUMPTER GROUP, INC.</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Frumpter Group Inc.</title>
+    <meta name="description" content="Official website of The Frumpter Group, Inc. EST'D MMXXIII.">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="css/index.css">
-    <script type="text/javascript" src="js/index.js"></script>
-    <script>
-        window.onload = function () {
-            getPOTD();
-        }
-    </script>
+    <script defer type="text/javascript" src="js/index.js"></script>
 </head>
 
 <body>
-    <div class="container">
-        <div class="header">
+    <div class="wrapper">
+
+        <header>
             <div class="title"><span>T</span>HE <span>F</span>RUMPTER <span>G</span>ROUP <span class="inc">INC.</span></span></div>
             <div class="address">
                 <div>69 Gameing Cres</div>
                 <div>Toronto, ON&nbsp;&nbsp;M4X 2X0</div>
             </div>
             <div>Official Home Page</div>
-        </div>
+        </header>
 
-        <hr />
+        <hr /> <!-------------------->
 
         <div class="list-container">
             <ul class="list">
@@ -91,29 +92,34 @@
             </ul>
         </div>
 
-        <hr />
+        <hr /> <!-------------------->
 
         <div class="ad">
             <a href="https://www.bawls.com/">
-                <img alt="BAWLS logo" src="img/bawls.png" width="86" height="57" />
+                <picture>
+                    <source media="(max-width: 851px)" srcset="/img/bawls-129w.png, /img/bawls-258w.png 2x, /img/bawls-516w.png 4x" sizes="129w">
+                    <source media="(min-width: 852px)" srcset="/img/bawls.png" sizes="86w">
+                    <img src="/img/bawls.png" alt="BAWLS logo">
+                </picture>
             </a>
-            <div>FOR LONG-LASTING ENERGY AT YOUR NEXT LAN PARTY</div>
-            <div><a href="https://www.bawls.com/">WWW.BAWLS.COM</a> OR VISIT YOUR LOCAL CONVENIENCE STORE</div>
+            <p>FOR LONG-LASTING ENERGY AT YOUR NEXT LAN PARTY<br>
+                <a href="https://www.bawls.com/">WWW.BAWLS.COM</a> OR VISIT YOUR LOCAL CONVENIENCE STORE
+            </p>
         </div>
 
-        <hr />
+        <hr /> <!-------------------->
 
-        <div class="comments">
+        <p>
             If you have any comments about our WEB page, you can write us at the address shown above. However, due
             to the limited number of personnel in our corporate office, we are unable to provide a direct response.
-        </div>
+        </p>
 
-        <hr />
+        <hr /> <!-------------------->
 
-        <div class="footer">
-            <a href="disclaimer.html">Legal Disclaimer</a>
-            <p>Copyright © 2023 <strong>The Frumpter Group Inc.</strong></p>
-        </div>
+        <footer>
+            <p><a href="disclaimer.html">Legal Disclaimer</a></p>
+            <p>Copyright © <span id="year">2023</span><b> The Frumpter Group, Inc.</b></p>
+        </footer>
     </div>
 </body>
 

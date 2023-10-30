@@ -1,7 +1,7 @@
 :root {
-    --frumpink: rgb(204, 43, 94);
-    --frumpurple: rgb(117, 58, 136);
-    --frumpindigo: rgb(64, 49, 129);
+    --frumpink: #cc2b5e;
+    --frumpurple: #753a88;
+    --frumpindigo: #403181;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,6 +25,10 @@
     }
 }
 
+/* @media (min-width: 465px) {
+
+} */
+
 a {
     color: var(--link)
 }
@@ -43,6 +47,23 @@ body {
     padding: 0;
     color: var(--text);
     background-color: var(--bg);
+    font-size: 13px;
+}
+
+header {
+    margin: 8px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    width: 100%;
+    margin: 8px;
+}
+
+p {
+    margin: 4px;
 }
 
 hr {
@@ -51,23 +72,11 @@ hr {
     margin: 8px;
 }
 
-p {
-    font-size: 16px
-}
-
-.container {
+.wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
-}
-
-.header {
-    width: 100%;
-    margin: 8px;
-    font-size: 16px;
-    text-align: center;
-    font-weight: bold;
 }
 
 .title {
@@ -79,16 +88,16 @@ p {
     }
 }
 
+.address {
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
 .inc {
     font-size: 12px !important;
 }
 
-.address {
-    font-size: 12px;
-}
-
 .list-container {
-    margin: 10px;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -105,8 +114,9 @@ p {
 .list-item {
     display: flex;
     flex-flow: column;
-    margin-bottom: 16px;
+    margin: 8px;
     max-width: 360px;
+    font-size: 16px;
 }
 
 .list-item sub {
@@ -115,16 +125,5 @@ p {
 
 .ad {
     text-align: center;
-    font-size: 12px;
-}
-
-.footer {
-    font-size: 12px;
-    width: 100%;
-}
-
-.comments {
-    display: flex;
-    justify-content: flex-start;
     font-size: 12px;
 }
