@@ -41,6 +41,12 @@ var products = [
 ];
 
 window.onload = function startUp() {
+  const disclaimer = document.createComment(
+    "DISCLAIMER: This website been created as a parody and a learning exercise with no intent to impersonate, mislead, disparage, defame or otherwise negatively impact any real-world persons or entities. All content is a work of fiction. Any similarity to real-world corporations, people, or current events is entirely coincidental. Please don't sue us."
+  );
+  var htmlElement = document.documentElement;
+  htmlElement.insertBefore(disclaimer, htmlElement.firstChild);
+
   if (document.getElementById("year")) {
     const year = new Date().getFullYear();
     document.getElementById("year").innerHTML = year;
