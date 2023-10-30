@@ -1,7 +1,8 @@
 :root {
-    --frumpink: #cc2b5e;
-    --frumpurple: #753a88;
-    --frumpindigo: #403181;
+    --frumpink: rgb(204, 43, 94);
+    --frumpurple: rgb(117, 58, 136);
+    --frumpindigo: rgb(64, 49, 129);
+    --bg: white;
 }
 
 @media (prefers-color-scheme: dark) {
