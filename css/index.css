@@ -7,11 +7,11 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg: black;
+        --bg: #2b2e38;
         --text: white;
-        --link-visited: rgb(255, 222, 222);
-        --link: rgb(255, 255, 255);
-        --link-hover: rgb(235, 174, 255);
+        --link-visited: #aaa;
+        --link: white;
+        --link-hover: rgb(54, 92, 192);
     }
 }
 
