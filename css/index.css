@@ -7,9 +7,9 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg: #2b2e38;
+        --bg: rgb(43, 46, 56);
         --text: white;
-        --link-visited: #aaa;
+        --link-visited: rgb(170, 170, 170);
         --link: white;
         --link-hover: rgb(54, 92, 192);
     }
@@ -73,6 +73,15 @@ hr {
     margin: 8px;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -127,4 +136,17 @@ hr {
 .ad {
     text-align: center;
     font-size: 12px;
+}
+
+.letter-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    max-width: 800px;
+    margin: 16px;
+    font-size: 16px !important;
+}
+
+.signature {
+    margin-top: 20px;
 }
