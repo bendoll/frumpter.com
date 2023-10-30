@@ -1,3 +1,11 @@
+// Google tag (gtag.js)
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+  dataLayer.push(arguments);
+}
+gtag("js", new Date());
+gtag("config", "G-3WLV6XLM6N");
+
 var products = [
   "https://www.ebay.ca/itm/185681140136", // 1:
   "https://www.ebay.ca/itm/185681140136", // 2:
